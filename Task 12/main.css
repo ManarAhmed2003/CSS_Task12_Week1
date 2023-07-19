@@ -1,0 +1,185 @@
+*{
+    box-sizing: border-box;
+}
+.assign1 div{
+    width: 100px;
+    height: 100px;
+    background-color: #eee;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    border-radius: 50%;
+    margin: 20px auto;
+    font-size: 20px;
+    box-shadow: 5px 0 0 0#ff5722, -5px 0 0 0 #03a9f4 ;
+    color: #ff5722;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.assign2 .parent,
+.assign3 .parent,
+.assign4 .parent,
+.assign5 .parent{
+    width: 600px;
+    height: 300px;
+    margin: 20px auto;
+    background-color: #eee;
+    display: flex;
+    flex-flow: row wrap;
+    padding: 10px;
+}
+.assign2 .parent{
+    justify-content: space-between;
+    align-content: space-between;
+}
+
+.assign2 .parent div{
+    color: white;
+    background-color:#f44336;
+    width: calc(80%/3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.assign3 .parent{
+    justify-content: space-between;
+}
+.assign3 .parent div{
+    background-color: #607d8b;
+    width: calc(80%/3);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+.assign3 .parent .one{
+    order: 6;
+    align-self: flex-end;
+}
+.assign3 .parent .two{
+    order: 5;
+}
+.assign3 .parent .three{
+    order: 2;
+    align-self: flex-start;
+}
+.assign3 .parent .four{
+    order: 3;
+
+}
+.assign3 .parent .five{
+    order: 4;
+
+}
+.assign3 .parent .six{
+    order: 1;
+}
+.assign4 .parent{ 
+    justify-content: space-between;
+    flex-direction: column;
+}
+.assign4 .parent div{
+    background-color: #009688;
+    color: white;
+    height: calc(90%/3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 5%;
+}
+.assign4 .parent .two{
+    align-self: flex-start;
+    width: 50%;
+}
+.assign4 .parent .one,
+.assign4 .parent .three{
+    align-self: flex-end;
+}
+.assign5 .parent .one{
+    background-color:#ff9800 ;
+    order: 2;
+}
+.assign5 .parent .two{
+    background-color: #8bc34a;
+    order: 3;
+    align-self: flex-end;
+}
+.assign5 .parent .three{
+    background-color:#795548 ;
+    order: 4;
+}
+.assign5 .parent .four{
+    background-color: #673ab7;
+    order: 1;
+    align-self: flex-end;
+}
+.assign5 .parent{
+    justify-content: space-between;
+}
+.assign5 .parent div{
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    width: calc(65%/4);
+    height: 50%;
+}
+:root{
+    --background-color:#ddd;
+    --margin:10px;
+    --pading:10px;
+}
+.page{
+    background-color: #eee;
+    padding: var(--pading);
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+.logo,
+.links{
+    background-color: var(--background-color);
+    padding: var(--pading);
+    margin: var(--margin);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+}
+.links{
+    list-style: none;
+    justify-content: flex-end;
+    flex-grow: 1;
+}
+.links li{
+    padding: 20px;
+}
+.main-area{
+    display: flex;
+    justify-content: space-between;
+}
+.content,
+.sidebar{
+    background-color: var(--background-color);
+    padding: var(--pading);
+    margin: var(--margin);
+    width: calc(100%/5);
+    height: 400px;
+}
+.content{
+    flex-grow: 1;
+}
+.footer{
+    background-color: var(--background-color);
+    padding: var(--pading);
+    margin: var(--margin);
+    display: flex;
+    justify-content: space-between;
+}
+
